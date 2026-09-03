@@ -1,22 +1,36 @@
-starfleet-infrastructure/
-│
-├── README.md
-│
-├── docs/
-│   ├── 01-architecture.md
-│   ├── 02-serveur-debian.md
-│   ├── 03-reseau.md
-│   ├── 04-dhcp-dns.md
-│   ├── 05-pare-feu.md
-│   ├── 06-nginx.md
-│   ├── 07-php.md
-│   ├── 08-mariadb.md
-│   ├── 09-phpmyadmin.md
-│   ├── 10-https-certificats.md
-│   ├── 11-ftp.md
-│   ├── 12-ldap.md
-│   └── 13-administration.md
-│
-├── screenshots/
-│
-└── diagrams/
+# Infrastructure Starfleet
+
+Projet de mise en place d'une infrastructure serveur sous Debian.
+
+## Objectif
+
+L'objectif de ce projet est de mettre en place une infrastructure composée
+d'un serveur Debian et d'une machine cliente permettant de tester les
+différents services proposés par le serveur.
+
+## Architecture
+
+L'infrastructure est composée de :
+
+- 1 VM serveur Debian sans interface graphique
+- 1 VM cliente Debian avec interface graphique
+
+Le serveur fournit notamment :
+
+- DHCP
+- DNS
+- Nginx
+- PHP 7
+- PHP 8
+- MariaDB
+- phpMyAdmin
+- FTP sécurisé
+- LDAP
+- HTTPS
+- administration
+
+## Domaine
+
+Le domaine interne utilisé est :
+
+"starfleet.lan"
